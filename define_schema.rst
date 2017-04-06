@@ -45,7 +45,7 @@ Define schema and create simple form
         description = u"After you will receive email to confirm registrations."
 
         def update(self):
-            self.request.ser('disable_border', True)
+            self.request.set('disable_border', True)
             super(RegisterForm, self).update()
 
         @button.buttonAndHandler(u"Register")
